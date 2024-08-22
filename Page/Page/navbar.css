@@ -1,0 +1,9 @@
+.logo{
+    color: var(--text-color);
+    font-size: var(--main-font);
+    font-weight: 600;
+    line-height: 0.8;
+}
+.navText{
+    color: black;
+  }

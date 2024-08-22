@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REBEL8</title>
+  <link rel="stylesheet" href="detail.css">
+   <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="navbar.css">
+     <style>
+      
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.box > a{
+    color: #121212;
+}
+
+li{
+    list-style: none;
+    margin-left: 8px;
+
+}
+
+:root{
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --main-font: 2.2rem;
+    --p-font: 1.1rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: var(--bg-color);
+    box-shadow: 0px 2px 18px 0 rgb(129 162 182 / 20%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 8%;
+    transition: .3s;
+}
+
+.logo{
+    color: var(--text-color);
+    font-size: var(--main-font);
+    font-weight: 600;
+    line-height: 0.8;
+}
+
+#menu-icon{
+    font-size: 38px;
+    color: var(--text-color);
+    z-index: 10001;
+    display: none;
+}
+
+.navabr{
+    display: flex;
+
+}
+
+.navabr a:hover{
+    background: var(--text-color);
+    color: #fff;
+    padding: 5px;
+}
+
+.icons{
+    color: var(--text-color);
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.icons i:hover{
+    opacity: 0.7;
+}
+
+.navText{
+  color: black;
+}
+     </style>
+     
+</head>
+<body>
+  <header class="d-block d-lg-flex text-center mb-4">
+        <a href="Home.html" class="text-decoration-none logo ">FashionGit</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
+        <div class=" " id="navbarSupportedContent">
+          <ul class="d-sm-block navbar-nav text-center   d-lg-flex flex-col flex-lg-row ">
+          
+        <!--collapse navbar-collapse-->
+            <div  class="p-2 nav-dropdown">
+                <button class="dropdown-toggle navText" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SHOP
+                </button>
+                <ul class="dropdown-menu">
+                  <li ><a class="dropdown-item" href="Tee.html">TEE</a></li>
+                  <li><a class="dropdown-item" href="headwear.html">HEADWEAR</a></li>
+                  <li><a class="dropdown-item" href="Accessories.html">ACCESSORIES</a></li>
+                </ul>
+              </div>
+
+
+        <li class="m-auto p-2"><a class=" navText"  href="story.html">OUR STORY</a></li>
+        <li class="m-auto p-2"><a class="navText" href="contact.html">CONTACT</a></li> 
+        <li class="m-auto p-2"><a class=" navText" href="account.html">ACCOUNT</a></li>    
+          </ul>
+
+          
+        </div>
+
+        <div class="icons">
+          <button class="navbar-toggler p-2 d-lg-none " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fs-2 fs-lg-3 bi bi-list"></i>
+          </button>
+            <a href="empty.html"><i class='bx text-black bx-shopping-bag' ></i></a>
+        </div>
+
+    </header>
+
+  <div class="container">
+    <div class="item-images">
+      <img src="img/a1.webp" alt="">
+      <img src="img/ee.webp" alt="">
+    </div>
+    <div class="item-details">
+      <h1 class="item-name">SPKIED DICE ZIPPO</h1>
+      <p class="price">$50.00</p>
+      <p class="description">100% Cotton standard fit long sleeve crewneck t-shirt with screenprint
+        Sku: 110040135</p>
+      
+        <label for="color">Color:</label>
+        <span class="color-option black" onclick="selectColor('White')">CHROME</span>
+   
+      </div>
+      <div class="size">
+        <label for="size">Size:</label>
+        <div class="size-options">
+          <span class="size-option" onclick="selectSize('none')">none</span>
+
+          
+        </div>
+        <input type="hidden" id="selected-size" name="size">
+        <a href="cart3.html" class="btn btn-dark mt-5">Shop</a>
+      </div>
+      
+
+      <div class="payment-tile">
+        
+        <p class="payment-text">Pay in 4 interest-free installments for orders over $50.00 with Shop Pay. Shop Pay is a convenient and secure payment option that allows you to split your purchase into four equal payments, with no interest or hidden fees. Simply select Shop Pay at checkout and enjoy the flexibility of paying over time. Make a statement with confidence in this Stylish Leather Jacket, and embrace a fashion-forward look that reflects your unique style!</p>
+      
+      </div>
+    </div>
+  </div>
+
+  <script src="tee.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
